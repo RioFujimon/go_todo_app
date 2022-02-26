@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"udemy/todo_app/config"
+	"udemy/go_todo_app/config"
 
 	"github.com/google/uuid"
 	"github.com/lib/pq"

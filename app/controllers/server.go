@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"strconv"
 	"text/template"
-	"udemy/todo_app/app/models"
-	"udemy/todo_app/config"
+	"udemy/go_todo_app/app/models"
+	"udemy/go_todo_app/config"
 )
 
 func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string)  {

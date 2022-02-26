@@ -3,7 +3,7 @@ package controllers
 import (
 	"log"
 	"net/http"
-	"udemy/todo_app/app/models"
+	"udemy/go_todo_app/app/models"
 )
 
 func signup(w http.ResponseWriter, r *http.Request)  {
