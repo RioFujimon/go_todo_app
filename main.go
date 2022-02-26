@@ -1,6 +1,6 @@
 package main
 
-import "udemy/todo_app/app/controllers"
+import "udemy/go_todo_app/app/controllers"
 
 func main() {
 	/*
