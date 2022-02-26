@@ -1,0 +1,202 @@
+2022/02/21 12:15:40 main.go:15: test
+2022/02/21 13:28:54 main.go:18: test
+2022/02/21 13:54:57 main.go:18: test
+2022/02/21 14:05:25 main.go:18: test
+2022/02/21 16:54:06 server.go:3160: http: panic serving [::1]:63209: template: top.html:1: unexpected "content" in define clause
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc000012f50})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001520e0}, {0x12cc9e0, 0x138f190}, {0xc000117a18, 0x2, 0xc000152120})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001520e0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001520e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001520e0}, 0xc00014e100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001011a0}, {0x13976b0, 0xc0001520e0}, 0xc00014e100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00010edc0, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:06 server.go:3160: http: panic serving [::1]:63210: template: top.html:1: unexpected "content" in define clause
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc000013090})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001521c0}, {0x12cc9e0, 0x138f190}, {0xc000052a18, 0x2, 0xc000152200})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001521c0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001521c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001521c0}, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092090}, {0x13976b0, 0xc0001521c0}, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000096000, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:06 server.go:3160: http: panic serving [::1]:63211: template: top.html:1: unexpected "content" in define clause
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc000013140})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0000bc000}, {0x12cc9e0, 0x138f190}, {0xc000053a18, 0x2, 0xc0000bc040})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0000bc000}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0000bc000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0000bc000}, 0xc0000a4100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092180}, {0x13976b0, 0xc0000bc000}, 0xc0000a4100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000960a0, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:07 server.go:3160: http: panic serving [::1]:63212: template: top.html:1: unexpected "content" in define clause
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc00019c120})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001de000}, {0x12cc9e0, 0x138f190}, {0xc000052a18, 0x2, 0xc0001de040})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001de000}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001de000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001de000}, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000101aa0}, {0x13976b0, 0xc0001de000}, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001b2000, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:07 server.go:3160: http: panic serving [::1]:63213: template: top.html:1: unexpected "content" in define clause
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc000013290})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001522a0}, {0x12cc9e0, 0x138f190}, {0xc0001c2a18, 0x2, 0xc0001522e0})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001522a0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001522a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001522a0}, 0xc0001c8000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ae0f0}, {0x13976b0, 0xc0001522a0}, 0xc0001c8000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001b20a0, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:07 server.go:3160: http: panic serving [::1]:63214: template: top.html:1: unexpected "content" in define clause
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc00009e160})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001de0e0}, {0x12cc9e0, 0x138f190}, {0xc000052a18, 0x2, 0xc0001de120})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001de0e0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001de0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001de0e0}, 0xc0001c8100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ae480}, {0x13976b0, 0xc0001de0e0}, 0xc0001c8100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001b2140, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:12 server.go:3160: http: panic serving [::1]:63216: template: top.html:1: unexpected "content" in define clause
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc00009e2b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0000bc0e0}, {0x12cc9e0, 0x138f190}, {0xc000053a18, 0x2, 0xc0000bc120})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0000bc0e0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0000bc0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0000bc0e0}, 0xc0000a4200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000925a0}, {0x13976b0, 0xc0000bc0e0}, 0xc0000a4200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001b21e0, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:12 server.go:3160: http: panic serving [::1]:63217: template: top.html:1: unexpected "content" in define clause
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc00019c300})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc0001de1c0}, {0x12cc9e0, 0x138f190}, {0xc000052a18, 0x2, 0xc0001de200})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc0001de1c0}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc0001de1c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc0001de1c0}, 0xc0001c8200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ae720}, {0x13976b0, 0xc0001de1c0}, 0xc0001c8200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001b2280, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/02/21 16:54:12 server.go:3160: http: panic serving [::1]:63218: template: top.html:1: unexpected "content" in define clause
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x12d9740, 0xc0000133e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+udemy/todo_app/app/controllers.generateHTML({0x13976b0, 0xc000152380}, {0x12cc9e0, 0x138f190}, {0xc000053a18, 0x2, 0xc0001523c0})
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/server.go:16 +0xf9
+udemy/todo_app/app/controllers.top({0x13976b0, 0xc000152380}, 0x0)
+	/Users/riofujimon/go/src/udemy/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13976b0, 0xc000152380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13976b0, 0xc000152380}, 0xc0000a4300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092960}, {0x13976b0, 0xc000152380}, 0xc0000a4300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000096140, {0x1398940, 0xc0001010b0})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
